@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chap-21 to 30 Assignment-2 </title>
+    </head>
+    <body>
+        <script>
+
+            var enterText = prompt("Enter some text here","");
+            var textEdit = enterText.split(" ");
+            var editedText = []
+            for(var j = 0; j < textEdit.length; j++){
+            
+              var firstCharacter = textEdit[j].charAt(0);
+              var secondCharacter = textEdit[j].slice(1);
+              firstCharacter =  firstCharacter.toUpperCase();
+              secondCharacter = secondCharacter.toLowerCase();  
+              var lastWord = firstCharacter; secondCharacter
+              editedText.push(lastWord); 
+              console.log(editedText);
+            }
+            var finalWord = editedText.join(" ");
+            console.log(finalWord)
+
+        </script>
+
+    </body>
+</html>

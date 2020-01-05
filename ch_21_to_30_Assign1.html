@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chap-21 to 30 Assignment-1 </title>
+    </head>
+    <body>
+        <script>
+            var number = parseInt(prompt("Enter any decimal number", ""));
+            var numRound = Math.round(number);
+            var enterText = prompt("Enter Text", "");
+            var editText = enterText.slice(0,numRound);
+            var answer = [];
+
+            for (var i = enterText.length -1; i >= 0; i--){
+                answer.push(editText[i]);
+            }
+
+            alert(editText);
+            alert(answer.join(""));
+        </script>
+
+    </body>
+</html>

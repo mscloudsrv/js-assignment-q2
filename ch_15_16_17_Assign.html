@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chap-15,16,17 Assignment</title>
+    </head>
+    <body>
+        <script>
+            var courses = [];
+
+            var courseOne = prompt("Enter your first cource name ", "");
+            var courseTwo = prompt("Enter your second cource name ", "");
+            var courseThree = prompt("Enter your third cource name ", "");
+            var courseFour = prompt("Enter your fourth cource name ", "");
+            var courseFive = prompt("Enter your fifth cource name ", "");
+
+            var courseOne = prompt("Edit your first cource name ", courseOne); 
+            var courseTwo = prompt("Edit your second cource name ", courseTwo);
+            var courseThree = prompt("Edit your third cource name ", courseThree);
+            var courseFour = prompt("Edit your fourth cource name ", courseFour);
+            var courseFive = prompt("Edit your fifth cource name ", courseFive);
+
+           
+            alert(courseOne +"\n" + courseTwo +"\n" + courseThree +"\n" + courseFour +"\n" + courseFive);
+            
+            
+            courses.splice(0,1,courseOne);
+            courses.splice(1,1,courseTwo);
+            courses.splice(2,1,courseThree);
+            courses.splice(3,1,courseFour);
+            courses.splice(4,1,courseFive);
+            alert(courses);
+
+        </script>
+
+    </body>
+</html>

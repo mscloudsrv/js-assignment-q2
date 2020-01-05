@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chap-10 to 14 Assignment-1 </title>
+    </head>
+    <body>
+        <script>
+            var firstValue = parseInt(prompt("Enter First Value", ""));
+            var secondValue = parseInt(prompt("Enter Second Value", ""));
+            var thirdValueOperator = prompt("Enter Any Operator Like +, -, *, /,", "");
+
+            if(thirdValueOperator === "+"){
+                var result = firstValue + secondValue
+                alert(result);
+            } 
+            else if (thirdValueOperator === "-"){
+                var result = firstValue - secondValue
+                alert(result);
+            }
+            else if (thirdValueOperator === "*"){
+                var result = firstValue * secondValue
+                alert(result);
+            }
+            else if (thirdValueOperator ==="/"){
+                var result = firstValue / secondValue
+                alert(result);
+            }
+            else {
+                alert("Wrong Operator");
+            }
+        </script>
+
+    </body>
+</html>

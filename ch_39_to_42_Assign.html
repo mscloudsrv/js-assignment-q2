@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chap-39 to 42 Assignment </title>
+    </head>
+    <body>
+        <script>
+            var course1 = parseInt(prompt("Enter Linux Marks ",""));
+            var course2 = parseInt(prompt("Enter Docker Marks ",""));
+            var course3 = parseInt(prompt("Enter Kubernetes Marks ",""));
+            var course4 = parseInt(prompt("Enter Git Marks ",""));
+            var course5 = parseInt(prompt("Enter JavaScript Marks ",""));
+
+            var totalMarks = (course1 + course2 + course3 + course4 + course5);
+
+            var percentage = totalMarks * 100 / 500;
+
+            switch(true){
+                case(percentage <= 100 && percentage >=90 ):
+                alert("Congaratulations you have got " +percentage + "%" + " & your grade is A+");
+                break;
+
+                case(percentage <= 90 && percentage >=80 ):
+                alert("Congaratulations you have got " +percentage + "%" + " & your grade is A");
+                break;
+
+                case(percentage <= 80 && percentage >=70 ):
+                alert("Congaratulations you have got " +percentage + "%" + " & your grade is B");
+                break;
+
+                case(percentage <= 70 && percentage >=55 ):
+                alert("Congaratulations you have got " +percentage + "%" + " & your grade is C");
+                break;
+
+                case(percentage <= 55 && percentage >=45 ):
+                alert("Congaratulations you have got " +percentage + "%" + " & your grade is D you need to focus in your study");
+                break;
+
+                case(percentage <= 45 && percentage >=0 ):
+                alert("Congaratulations you have got " +percentage + "%" + " & your grade is E\n Sorry you are faild");
+                break;
+
+                default: alert("Invalid data")
+            }
+        </script>
+
+    </body>
+</html>

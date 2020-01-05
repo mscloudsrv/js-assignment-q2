@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chap-18,19,20 Assignment </title>
+    </head>
+    <body>
+        <script>
+            var courses = [];
+
+            var courseOne = prompt("Enter your first cource name ", "");
+            var courseTwo = prompt("Enter your second cource name ", "");
+            var courseThree = prompt("Enter your third cource name ", "");
+            var courseFour = prompt("Enter your fourth cource name ", "");
+            var courseFive = prompt("Enter your fifth cource name ", "");
+            
+            courses.push(courseOne +"\n" + courseTwo +"\n" + courseThree +"\n" + courseFour +"\n" + courseFive);
+            for(var i = 0; i <courses.length; i++){
+            alert(courses[i]);
+            }       
+                       
+            
+            for (var j=0; j <courses.length; j++){
+                var course = prompt("Edit your first cource name ", courseOne); 
+                var course = prompt("Edit your second cource name ", courseTwo);
+                var course = prompt("Edit your third cource name ", courseThree);
+                var course = prompt("Edit your fourth cource name ", courseFour);
+                var course = prompt("Edit your fifth cource name ", courseFive);
+                
+                if (course === course[j]) {
+                alert("You were edit it");
+                }
+                else if (course === courses[j]) {
+                
+                }
+                else if (course === courses[j]) {
+                
+                }
+                else if (course === courses[j]) {
+                
+                }
+                else if (course === courses[j]) {
+                
+                }
+                else {
+                    cources[i] = cources[j]
+                }
+            }              
+                
+
+            alert(course1 +"\n" + course2 +"\n" + course3 +"\n" + course4 +"\n" + course5);
+
+            courses.splice(courses[i], courses[i]);
+            
+            alert(courses);
+            </script>
+
+    </body>
+</html>

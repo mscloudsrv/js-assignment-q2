@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chap-31 to 34 Assignment </title>
+    </head>
+    <body>
+    <script>
+        var name = prompt("Enter your good name");
+        var dateOfBirth = parseInt(prompt("Enter your birth date"));
+        var month = parseInt(prompt("Enter your birth month"));
+        var year = parseInt(prompt("Enter your birth year"));
+        var yearMonths  = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+             
+        var now = new Date();
+        var currentHours = now.getHours();
+        if(currentHours >= 0 && currentHours <= 5){
+            console.log(name  +" it's sleep time ");
+        }
+        else if(currentHours >= 6 && currentHours <= 11){
+            console.log(name + " Good Morning! have a nice day ");
+
+        }
+        else if(currentHours >= 12 && currentHours <= 17){
+            console.log(name  + " Good Noon! have a great day ");
+        }
+        else if(currentHours >= 18 && currentHours <= 21){
+            console.log(name + " Good Evening! have a great day ");
+
+        }
+        else{
+            console.log(name + " Good Night! Bye Bye ");
+        }
+
+        var dateOfBirth2 = new Date(yearMonths[month] + dateOfBirth +" " + year);
+        console.log(name + " Your birthday is " + dateOfBirth2);
+        var aDay = 1000 * 60 * 60 * 24;
+        var aDayInHour = 1000 * 60 * 60;
+        var aDayInSeconds = 1000 * 60;
+
+        var msDiff = now.getTime() - dateOfBirth2.getTime();
+        var getDays = Math.floor(msDiff / aDay);
+        var dateOfBirthInYear = (now.getFullYear() - dateOfBirth2.getFullYear());
+        var dateOfBirthInMonth = (now.getMonth() - dateOfBirth2.getMonth());
+        var dateOfBirthInDay = (Math.abs(now.getDay() - dateOfBirth2.getDay()));
+        var dateOfBirthInHours = (now.getHours() - dateOfBirth2.getHours());
+        var dateOfBirthInSeconds = (now.getSeconds() - dateOfBirth2.getSeconds());
+             
+        console.log(name + " you are " + dateOfBirthInYear + " years " + dateOfBirthInMonth + " months " + dateOfBirthInDay + " days and " + dateOfBirthInHours + " hours " + dateOfBirthInSeconds + " seconds old ");
+
+        console.log(name +" you are " +getDays + " days old ");
+
+        var upCommingBirthDay = new Date("July 15, 2020 11:59");
+        var daysLeftNext = Math.floor((upCommingBirthDay.getTime() - now.getTime()) / aDay);
+        var hoursLeftNext = Math.abs((upCommingBirthDay.getHours() - now.getHours()) / aDayInHour);
+        var secondsLeftNext = Math.abs((upCommingBirthDay.getSeconds() - now.getSeconds()) / aDayInSeconds);
+        console.log(name + " your Up-comming birthday remains " + daysLeftNext + " days " + Math.round(hoursLeftNext) +" hours and " + Math.round(secondsLeftNext) + " seconds left ");
+        </script>
+
+    </body>
+</html>
